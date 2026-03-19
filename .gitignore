@@ -1,0 +1,70 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+
+# C++ specific
+*.ilk
+*.pdb
+*.exp
+*.lib
+*.pch
+*.idb
+*.obj
+*.log
+*.tlog
+*.recipe
+*.dll.recipe
+ipch/
+
+# Visual Studio IntelliSense
+*.VC.db
+*.VC.db-shm
+*.VC.db-wal
+*.VC.opendb
+*.opendb
+
+# Visual Studio cache/options
+*.cache
+.futdcache.v2
+DocumentLayout.json
+DocumentLayout.backup.json
+
+# NuGet
+project.assets.json
+project.nuget.cache
+*.nuget.props
+*.nuget.targets
+*.dgspec.json
+
+# Visual Studio Copilot
+copilot-chat/
+CopilotIndices/
+
+# JetBrains Rider/IntelliJ based products
+.idea/
+
+# Publish profiles
+PublishProfiles/
+Properties/ # Just to make sure
+
+# Configuration files
+*.json
+
+# Build folders
+DesignTimeBuild/
+FileContentIndex/
+ProjectEvaluation/
+
+# Installer Scripts
+*.iss # Inno Setup Script
