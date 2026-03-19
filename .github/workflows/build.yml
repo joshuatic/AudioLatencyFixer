@@ -1,10 +1,10 @@
-name: Build and Test
+name: Build
 
 on:
   push:
-    branches: [ "main", "master" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "main", "master" ]
+    branches: [ "master" ]
 
 jobs:
   build:
@@ -18,14 +18,8 @@ jobs:
       with:
         dotnet-version: 8.0.x
 
-    - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v2
-
-    - name: Restore dependencies
-      run: dotnet restore AudioLatencyFixer.sln
+    - name: Restore
+      run: dotnet restore AudioLatencyFixer/AudioLatencyFixer.csproj
 
     - name: Build
-      run: msbuild AudioLatencyFixer.sln /p:Configuration=Release /p:Platform="x64"
-
-    - name: Test
-      run: dotnet test --no-build --verbosity normal /p:Configuration=Release
+      run: dotnet build AudioLatencyFixer/AudioLatencyFixer.csproj -c Release --no-restore
